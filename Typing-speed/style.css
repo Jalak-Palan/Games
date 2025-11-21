@@ -1,0 +1,155 @@
+/* 🌈 Simple & Attractive CSS Theme */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background and layout */
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Main card */
+.container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 50px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #4b6cb7;
+  margin-bottom: 25px;
+}
+
+/* Stats bar */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(102, 166, 255, 0.3);
+}
+
+.stat-box h3 {
+  font-size: 1em;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+.stat-box div {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* Text display area */
+.text-display {
+  background: #f4f6fb;
+  padding: 25px;
+  border-radius: 12px;
+  font-size: 1.2em;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  border-left: 5px solid #66a6ff;
+}
+
+/* Typing area */
+#typingArea {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.1em;
+  border: 2px solid #66a6ff;
+  border-radius: 10px;
+  resize: vertical;
+  min-height: 130px;
+  font-family: "Courier New", monospace;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+#typingArea:focus {
+  outline: none;
+  border-color: #4b6cb7;
+  box-shadow: 0 0 8px rgba(102, 166, 255, 0.3);
+}
+
+/* Buttons */
+button {
+  padding: 12px 35px;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.start-btn {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #38f9d7, #43e97b);
+}
+
+.reset-btn {
+  background: linear-gradient(135deg, #ff6b6b, #fddb92);
+}
+
+.reset-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #fddb92, #ff6b6b);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    width: 100%;
+    margin: 8px 0;
+  }
+}
